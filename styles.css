@@ -1,0 +1,61 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+ 
+ header {
+    color: white;
+    position: relative;
+    background-color: #009ca9; /* Color de fondo */
+    padding: 20px;
+}
+
+#logo {
+    position: absolute;
+    top: -5px; /* Ajusta la distancia desde la parte superior */
+    right: 10px; /* Ajusta la distancia desde la parte derecha */
+    width: 100px; /* Ajusta el tamaño del logo */
+    height: 100px; /* Mantén la proporción del logo */
+}
+.carousel-inner img {
+    margin: 20px auto; /* Centra la imagen */
+}
+.title, .subtitle {
+    color: white;
+    background-color: #009ca9;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px 10px; /* Espaciado interno */
+    margin: 10px; /* Espaciado externo */
+}
+.description{
+    margin: 10px; /* Espaciado externo */
+    padding: 15px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde del párrafo */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    background-color: #f9f9f9; /* Fondo claro */
+}
+
+nav {
+    background-color: #009ca9; /* Color de fondo */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Centra los enlaces */
+    border-radius: 10px; /* Esquinas redondeadas */
+    margin: 30px auto; /* Espaciado externo */
+    max-width: 400px; /* Ancho máximo del contenedor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+nav a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #ffffff; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    margin: 0 10px; /* Espaciado entre los enlaces */
+    padding: 5px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Esquinas redondeadas */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+nav a:hover {
+    background-color: #007b8a; /* Color de fondo al pasar el mouse */
+}

@@ -1,15 +1,14 @@
 *{
     font-family: 'Nunito', sans-serif;
 }
- 
- header {
+header {
     color: white;
     position: relative;
     background-color: #009ca9; /* Color de fondo */
     padding: 20px;
 }
 
-#logo {
+.logo {
     position: absolute;
     top: -5px; /* Ajusta la distancia desde la parte superior */
     right: 10px; /* Ajusta la distancia desde la parte derecha */
@@ -19,7 +18,7 @@
 .carousel-inner img {
     margin: 20px auto; /* Centra la imagen */
 }
-.title, .subtitle {
+.subtitle {
     color: white;
     background-color: #009ca9;
     display: inline-block;
@@ -27,18 +26,59 @@
     padding: 5px 10px; /* Espaciado interno */
     margin: 10px; /* Espaciado externo */
 }
-.description{
+.intro, .mision, .vision{
     margin: 10px; /* Espaciado externo */
-    padding: 15px; /* Espaciado interno */
+    padding: 10px; /* Espaciado interno */
     border: 1px solid #ccc; /* Borde del párrafo */
     border-radius: 5px; /* Esquinas redondeadas */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
     background-color: #f9f9f9; /* Fondo claro */
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.conferencias {
+    display: flex; /* Activa el modelo de caja flexible */
+    flex-direction: column; /* Asegura que los elementos estén en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: space-between; /* Espacia los elementos verticalmente */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    margin: 10px auto; /* Centra el contenedor y agrega espaciado externo */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde del contenedor */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    background-color: #f9f9f9; /* Fondo claro */
+    max-width: 400px; /* Ancho máximo del contenedor */
+    height: 450px; /* Altura fija para el contenedor */
 }
 
+.pic {
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    max-width: 380px; /* Ancho máximo de la imagen */
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen para que llene el contenedor sin distorsión */
+    border-radius: 5px; /* Esquinas redondeadas */
+    }
+
+.prf {
+    padding-top: 5px; /* Espaciado superior */
+    margin: 10px; /* Espaciado interno */
+    text-align: justify; /* Justifica el texto */
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+}
+
+.date{
+    font-weight: bold; /* Texto en negrita */
+    display: flex;
+    justify-content: space-around;
+}
 nav {
     background-color: #009ca9; /* Color de fondo */
-    padding: 10px 20px; /* Espaciado interno */
+    padding: 10px 5px; /* Espaciado interno */
     text-align: center; /* Centra los enlaces */
     border-radius: 10px; /* Esquinas redondeadas */
     margin: 30px auto; /* Espaciado externo */

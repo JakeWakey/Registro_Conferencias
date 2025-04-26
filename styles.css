@@ -1,53 +1,71 @@
+/* Fuente*/
 *{
     font-family: 'Nunito', sans-serif;
 }
+
+/* Estilos para todos los encabezados*/
 header {
-    color: white;
-    position: relative;
-    background-color: #009ca9; /* Color de fondo */
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #009ca9;
+    padding: 10px 20px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body {
+    margin: 0; /* Elimina márgenes predeterminados del body */
+    padding: 0; /* Elimina paddings predeterminados del body */
+}
+
+header h1 {
+    font-size: 2rem; /* Tamaño del texto */
+    color: white; /* Color del texto */
+    margin: 0; /* Elimina márgenes */
+    font-weight: 400; /* Define un peso de fuente consistente */
 }
 
 .logo {
-    position: absolute;
-    top: -5px; /* Ajusta la distancia desde la parte superior */
-    right: 10px; /* Ajusta la distancia desde la parte derecha */
-    width: 100px; /* Ajusta el tamaño del logo */
-    height: 100px; /* Mantén la proporción del logo */
+    height: 90px;
+    width: auto; /* Mantén la proporción del logo */
 }
+/* Estilos de Index */
 .carousel-inner img {
-    margin: 20px auto; /* Centra la imagen */
+    margin: 20px auto;
 }
 .subtitle {
     color: white;
     background-color: #009ca9;
     display: inline-block;
     border-radius: 5px;
-    padding: 5px 10px; /* Espaciado interno */
-    margin: 10px; /* Espaciado externo */
+    padding: 5px 10px; 
+    margin: 10px;
 }
 .intro, .mision, .vision{
-    margin: 10px; /* Espaciado externo */
-    padding: 10px; /* Espaciado interno */
-    border: 1px solid #ccc; /* Borde del párrafo */
-    border-radius: 5px; /* Esquinas redondeadas */
+    margin: 10px;
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
-    background-color: #f9f9f9; /* Fondo claro */
+    background-color: #f9f9f9;
     flex-direction: column;
     justify-content: flex-end;
 }
+/* Estilos de Eventos */
 .conferencias {
     display: flex; /* Activa el modelo de caja flexible */
     flex-direction: column; /* Asegura que los elementos estén en columna */
     align-items: center; /* Centra los elementos horizontalmente */
     justify-content: space-between; /* Espacia los elementos verticalmente */
     text-align: center; /* Centra el texto dentro del contenedor */
-    margin: 10px auto; /* Centra el contenedor y agrega espaciado externo */
-    padding: 20px; /* Espaciado interno */
-    border: 1px solid #ccc; /* Borde del contenedor */
-    border-radius: 5px; /* Esquinas redondeadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
-    background-color: #f9f9f9; /* Fondo claro */
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
     max-width: 400px; /* Ancho máximo del contenedor */
     height: 450px; /* Altura fija para el contenedor */
 }
@@ -61,9 +79,9 @@ header {
     }
 
 .prf {
-    padding-top: 5px; /* Espaciado superior */
-    margin: 10px; /* Espaciado interno */
-    text-align: justify; /* Justifica el texto */
+    padding-top: 5px; 
+    margin: 10px;
+    text-align: justify; 
 }
 
 .info{
@@ -77,25 +95,71 @@ header {
     justify-content: space-around;
 }
 nav {
-    background-color: #009ca9; /* Color de fondo */
-    padding: 10px 5px; /* Espaciado interno */
-    text-align: center; /* Centra los enlaces */
-    border-radius: 10px; /* Esquinas redondeadas */
-    margin: 30px auto; /* Espaciado externo */
+    background-color: #009ca9;
+    padding: 10px 5px;
+    text-align: center;
+    border-radius: 10px; 
+    margin: 30px auto; 
     max-width: 400px; /* Ancho máximo del contenedor */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
 nav a {
-    text-decoration: none; /* Elimina el subrayado */
-    color: #ffffff; /* Color del texto */
-    font-weight: bold; /* Texto en negrita */
-    margin: 0 10px; /* Espaciado entre los enlaces */
-    padding: 5px 15px; /* Espaciado interno */
-    border-radius: 5px; /* Esquinas redondeadas */
-    transition: background-color 0.3s ease; /* Transición suave */
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 5px 15px; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #007b8a; /* Color de fondo al pasar el mouse */
+    background-color: #007b8a;
 }
+main{
+    padding: 20px;
+}
+/* Estilos de Registro */
+#registroForm {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    gap: 15px;
+}
+#registroForm select {
+    width: auto; /* Ajusta el ancho al contenido */
+    max-width: 200px; /* Ancho máximo del selector */
+    padding: 5px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde del selector */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+.boton {
+    background-color: grey;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; /* Ajusta el tamaño del botón */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 15px 0 0 0; /* Elimina el centrado y agrega margen superior */
+    align-self: flex-start; /* Alinea el botón a la izquierda */
+    width: auto; /* Mantén el ancho ajustado al contenido */
+}
+.boton:hover {
+    background-color: #009ca9;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .featured-products {
+      flex-direction: column;
+      align-items: center;
+    }
+    .product-card {
+      width: 80%;
+    }
+  }

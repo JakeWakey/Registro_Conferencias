@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Universidad Americana</h1>
+        <img class="logo" src="https://scontent.fmga7-1.fna.fbcdn.net/v/t39.30808-6/396252777_648284600820456_7808617588063561947_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=zZkqvU5xm3gQ7kNvwHxXH1Z&_nc_oc=AdnAeHAhhwcG-3jashByUhJ3mQ6S6x8JUpP4QSRdPfEINLcpBFOPHBIqKVLDgc3fFIc&_nc_zt=23&_nc_ht=scontent.fmga7-1.fna&_nc_gid=ULDJe8cNallw1xlZkoTJgQ&oh=00_AfHtvhj3mq9d_85t0jrQ1YmAXSKuB2lgckfOpYSUhFAjgA&oe=68110ABC" alt="Logo UAM">
+    </header>
+
+    <main>
+        <h2>Formulario de Registro</h2>
+        <form id="registroForm">
+            <div class="datos">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo">
+                <span id="nombreError" class="error" style="color: red; font-size: 0.9rem;"></span>
+
+                <label for="correo">Correo Electrónico Institucional</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@uamv.edu.ni">
+                <span id="correoError" class="error" style="color: red; font-size: 0.9rem;"></span>
+            </div>
+            <label for="carrera">Carrera</label>
+                <select id="carrera" name="carrera">
+                    <option value="">Seleccione su carrera</option>
+                    <option value="Ingeniería en Sistemas">Ingeniería en Sistemas</option>
+                    <option value="Ingeniería Industrial">Ingeniería Industrial</option>
+                    <option value="Ingeniería Civil">Ingeniería Civil</option>
+                </select>
+                <span id="carreraError" class="error" style="color: red; font-size: 0.9rem;"></span>
+
+            <label>Conferencias a las que desea asistir:</label>
+            <div>
+                <input type="checkbox" id="conf1" name="conferencias" value="GitHub">
+                <label for="conf1">Uso de GitHub en proyectos colaborativos</label>
+            </div>
+            <div>
+                <input type="checkbox" id="conf2" name="conferencias" value="Docker">
+                <label for="conf2">Introducción a Docker para entornos de desarrollo</label>
+            </div>
+            <div>
+                <input type="checkbox" id="conf3" name="conferencias" value="Linux">
+                <label for="conf3">Configuración básica para servidores Linux</label>
+            </div>
+            <span id="conferenciasError" class="error" style="color: red; font-size: 0.9rem;"></span>
+
+            <button class="boton" type="submit">Enviar</button>
+            <p id="successMessage" style="font-size: 1rem; font-weight: bold;"></p>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
